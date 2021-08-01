@@ -1,0 +1,182 @@
+/*navigationbar*/
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+ 
+  .navbar .nav-item:hover .nav-link{ color: #ddae1a;  }
+  .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+  .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+   
+}
+.container-fluid{
+  background-color:  #0f2345 ;
+
+
+}
+
+  .navbar-nav a{
+ border-color: #0f2345 ;
+       color:  #0f2345 ;
+    
+   }
+
+  .navbar-nav a:hover{
+ border-color:#ddae1a;
+       color: #ddae1a;
+       background-color: white;
+   }
+
+
+nav{
+    background-color:  #0f2345 ;
+  
+  
+}
+
+.navbar-nav li{
+  padding-right: 35px;
+
+
+}
+
+.dropdown-menu li{
+  padding-right: 0px;
+}
+
+.navbar-nav li a{
+  color:#0f2345;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+
+
+.dropdown-menu li a {
+  color:#ddae1a;
+  font-weight: normal;
+}
+
+
+
+/*bodyelement*/
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.collection{
+    width: 100%;
+    height: 100vh;
+    background-color:#0f2345 ;
+}
+.cone{
+    width: 100%;
+    height: 100vh;
+    background-color:#0f2345 ;
+}
+.header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header h1{
+    color: #ddae1a;
+    font-family: q;
+}
+.left{
+    width: 70%;
+    height: 40vh;
+    display: flex;
+    margin: 0px auto;
+    color: white;
+    position: relative;
+    top: 70px;
+    
+}
+
+.right {
+    text-align: right;
+    position: relative;
+    top: 90px;
+}
+.left h5{
+    color: white;
+   margin-left: 50px;
+   font-family: d;
+
+}
+
+.right img{
+    margin-left: 50px;
+}
+.collectionitems h5 p{
+    font-family: q;
+}
+.collectionitems a{
+    text-decoration: none;
+    position: relative;
+    top: 13px;
+    padding: 10px 30px;
+    color: #0f2345;
+    background-color: #ddae1a;
+    transition: 0.5s;
+}
+.collectionitems a:hover{
+    background:none;
+    border: 1px solid #ddae1a;
+    color: #ddae1a;
+}
+.collectionitems img  {
+    width: 500px ;
+    height: 300px;
+}
+.ctwo{
+    background-color: white;
+}
+.ctwo .lsecond h5,p{
+    color: #0f2345;
+}
+.lsecond a{
+    color:white;
+    background-color: #0f2345;
+    transition: 0.5s;
+}
+.lsecond a:hover{
+    border: 1px solid #0f2345;
+    color: #0f2345;
+}
+
+h5 .itemsprice{
+     color: #ddae1a;
+
+     border-color: transparent;
+    background-color: transparent;
+    font-size: 20px;
+   
+}
+
+h5 .itemsprice:hover{
+    border-color: transparent;
+
+    background-color: transparent;
+    font-size: 20px;
+    color: #ddae1a;
+}
+
+
+
+/*footer*/
+
+.end{
+  background-color: #0f2345;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: white;
+  padding: 0px;
+}
+

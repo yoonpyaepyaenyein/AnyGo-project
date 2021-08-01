@@ -1,0 +1,961 @@
+
+/*navigationbar*/
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+ 
+  .navbar .nav-item:hover .nav-link{ color: #ddae1a;  }
+  .navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+  .navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+   
+}
+
+
+  .navbar-nav a{
+ border-color: #0f2345 ;
+       color:  #0f2345 ;
+    
+   }
+
+  .navbar-nav a:hover{
+ border-color:#ddae1a;
+       color: #ddae1a;
+       background-color: white;
+   }
+
+
+nav{
+    background-color:  #0f2345 ;
+  
+  
+}
+
+.navbar-nav li{
+  padding-right: 35px;
+
+
+}
+
+.dropdown-menu li{
+  padding-right: 0px;
+}
+
+.navbar-nav li a{
+  color:#0f2345;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+
+
+
+.dropdown-menu li a {
+  color:#ddae1a;
+  font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+        *{    padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+       body a{
+           text-decoration: none;
+       }
+        .body{
+           height: 100%;
+            perspective: 1px;
+            transform-style:preserve-3d ;
+            overflow-y:scroll ;
+            overflow-x: hidden;
+        }
+        #home{
+            background: url(assets/bthree.png);
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+           transform-style: inherit;
+           animation: slideIn .5s forwards;
+           transform: translateY(-100rem);
+            
+        }
+      
+        .brand a{
+            text-decoration: none;
+            color: rgb(4, 80, 4);
+            transition: 0.5s;
+        }
+        .brand a:hover{
+            font-size: 30px;
+        }
+        a{
+            text-decoration:none;
+        }
+       
+        .brand {
+            transform: translateX(-100rem);
+            animation: slideIn .5s forwards;
+            text-transform: none;
+            }
+        
+       
+        .logo{
+            width: 50px;
+            height: 50px;
+            
+        }
+      
+        .container{
+            
+            width: 100%;
+            margin: 0 auto;
+           
+
+        }
+        header{
+            position:sticky;
+            top:0;
+            position: -webkit-sticky;
+        }
+        .homeNav{
+            height: 50px;
+            padding-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            }
+        .homeNav ul li{
+            list-style-type: none;
+            transform: translateX(100rem);
+            animation: slideIn .5s forwards;
+        }
+        .homeNav ul{
+            display: flex;
+           }
+        .homeNav ul li a{
+            padding: 0.5rem 0;
+            margin: 0 3rem;
+            position: relative;
+            letter-spacing: 2px;
+            color: white;
+            font-family: d;
+            
+        }
+        .homeNav ul li a:last-child{
+            margin-right: 0px;
+        }
+       
+        .homeNav ul li a::after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color:white;
+            left: 0;
+            transform: scaleX(0);
+            transition: all .5s;
+           }
+        
+        .homeNav ul li a::after{
+            bottom:0;
+            transform-origin: left;
+        }
+        
+        .homeNav ul li a:hover::after{
+            transform : scaleX(1) ;
+        }
+        .homeNav ul li a:hover{
+            font-size: 20px;
+            color: white;
+        }
+        .homeNav ul li:nth-child(1){
+            animation-delay: 0s;
+        }
+        .homeNav ul li:nth-child(2){
+            animation-delay: 0.5s;
+        }
+        .homeNav ul li:nth-child(3){
+            animation-delay: 1s;
+        }
+        .homeNav ul li:nth-child(4){
+            animation-delay: 1.5s;
+        }
+        .homeNav ul li:nth-child(5){
+            animation-delay: 2s;
+        }
+        .homeNav ul li a:active::after{
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color:white ;
+            bottom: 0;
+            
+
+        }
+        @keyframes slideIn{
+            from{
+
+            }
+            to{
+                transform: translateX(0);
+            }
+        }
+        .MainHeader{
+            width: 40%;
+            height: 30vh;
+            position: absolute;
+            text-align: center;
+            top: 60%;
+            left: 70px;
+            font-family: d;
+            color: rgb(4, 80, 4);
+            transform: translateX(-100rem);
+            animation: slideIn .5s forwards;
+            animation-delay: 1s;
+        }
+        .MainHeader a{
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 30px;
+            border: 1px solid rgb(4, 80, 4);
+            color: rgb(4, 80, 4);
+            transition: 0.5s;
+        }
+        .MainHeader a:hover{
+            background-color: rgb(4, 80, 4);
+            color: white;
+        }
+        
+        /* trips start here  */
+
+         /* ===============================================================   */
+
+       #trips{
+        width: 100%;
+        height: 30vh;
+        text-align: center;
+        color: rgb(4, 80, 4);
+        font-family: d;
+        background-color: rgb(213, 255, 213);
+        
+        
+       }
+       .tripsitems{
+           margin-top:30px ;
+       }
+       .tripstext{
+        position: relative;
+        top: 50px;
+        animation: slideIn 0.5s forwards;
+        transform: translateX(-100rem);
+        animation-delay:2s ;
+       }
+       
+       .tripsitems a {
+        padding: 15px 25px;
+        border: 1px solid rgb(4, 80, 4) ;
+        color: rgb(4, 80, 4);
+        font-family: q;
+        letter-spacing: 2px;
+        margin-right: 15px;
+        transition: 0.5s;
+       }
+       .tripsitems a:nth-child(1):hover{
+           background-color: rgb(4, 80, 4) ;
+           color: white;
+           font-size: 20px;
+           
+           }
+           .tripsitems a:nth-child(2):hover{
+            background-color: rgb(4, 80, 4) ;
+            color: white;
+            font-size: 20px;
+            
+            }
+            .tripsitems a:nth-child(3):hover{
+                background-color: rgb(4, 80, 4) ;
+                color: white;
+                font-size: 20px;
+                
+                }
+                .tripsitems a:nth-child(4):hover{
+                    background-color: rgb(4, 80, 4) ;
+                    color: white;
+                    font-size: 20px;
+                    
+                    }
+       .tripstext hr {
+           
+        visibility:visible;
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 10%;
+        border: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, rgb(4, 80, 4), rgba(255, 255, 255, 0.75),  rgb(4, 80, 4));} 
+
+        /* ==================================================  */
+
+       #hiking{
+        width: 100%;
+        height: 100vh;
+        background:url(assets/bfiver.png) ;
+        background-size: cover;
+        background-blend-mode: soft-light;
+        }
+        .hikingheader{
+            text-align: center;
+            margin-top: 3%;
+            font-family: d;
+            color: rgb(4, 80, 4);
+        }
+        .hikingtext{
+            margin-top: 10px;
+            text-align: center;
+            color: teal;
+            font-family: q;
+        }
+        .hikingheaderhr{
+        visibility:visible;
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 10%;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgb(4, 80, 4), rgba(255, 255, 255, 0.75),  rgb(4, 80, 4));
+        }
+        .choosepannel , .pannel{
+            padding: 10px 20px;
+            border: 1px solid rgb(4, 80, 4);
+            color: rgb(4, 80, 4);
+            font-family: q;
+            transition: 0.5s;
+        }
+        .pannel:hover{
+            background-color: rgb(4, 80, 4);
+            color: white;
+        }
+        .campingpannel{
+            border: 1px solid white;
+            color: white;
+            position: relative;
+            top: -30px;
+            
+           
+        }
+        .campingpannel:hover{
+            border: none;
+        }
+        
+        .hcard{
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 30px;
+        animation: slideIn 1s forwards;
+        transform: translateX(100rem);
+        animation-delay: 3s;
+        }
+    .hcarditems{
+        width: 18%;
+        height: 63vh;
+        background-color:white;
+       box-shadow: 5px 1px 10px rgb(231, 228, 228);
+        border-radius: 10px;
+        margin: 0px 20px;
+    }
+    .cardimg{
+        width:100% ;
+        height: 40vh;
+        background-image: url(assets/hiking/kayah.jpg);
+        background-size: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+    }
+    
+    .cardimg a{
+        
+        padding: 10px 50px;
+        background-color: white;
+        display: inline-block;
+        border-bottom-right-radius: 20px;
+        font-family: q;
+        font-size: 12px;
+        color: rgb(4, 80, 4);
+    }
+    
+    .cardtext{
+        font-family: q;
+        width: 100%;
+        height: 20vh;
+        color: rgb(121, 4, 43);
+        letter-spacing: normal;
+        text-align: left;
+        margin-top: 5px;
+        
+
+        
+    }
+    
+    .hhead{
+        color: rgb(4, 80, 4);
+        font-size:15px ;
+        font-family: d;
+        margin-left: 10px;
+        padding: 0px 4px;
+    }
+    p{  
+        color: #386C5F;
+        padding: 0px 4px;
+        margin-left: 10px;
+        text-align: left;
+        font-size: 13px;
+        letter-spacing: 0px;
+    }
+    .cardtext hr{
+       
+        visibility:visible;
+        margin: 0 auto;
+        margin-top: 10px;
+        width: 60%;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgb(4, 80, 4), rgba(255, 255, 255, 0.75),  rgb(4, 80, 4));
+    }
+    .cardprice{
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 5px;
+        margin-right:20px;
+    }
+    .cardprice a{
+        margin: 5px;
+        border: 1px solid rgb(4, 80, 4);
+        color: rgb(4, 80, 4);
+        display: inline-block;
+        padding: 4px 10px;
+        border-radius: 10px;
+        transition: 0.5s;
+       }
+       .cardprice a:hover{
+           background-color: rgb(4, 80, 4);
+           color: white;
+       }
+       .cardfrom{
+           color:rgb(4, 80, 4);
+           font-family: d;
+       }
+       .cardsecondimg{
+           background: url(assets/hiking/putao.jpg);
+           background-size: cover;
+       }
+       .cardthirdimg{
+           background: url(assets/hiking/grouptwo.jpg);
+           background-size: cover;
+       }
+       .cardfourthimg{
+           background: url(assets/hiking/groupthree.jpg);
+           background-size: cover;
+       }
+
+
+       /* ===================================================================================  */
+   
+       #hikingneed{
+            display: flex;
+            color: rgb(4, 80, 4);
+            font-family: d;
+           width: 100%;
+           height: 30vh;
+           background-color: rgb(213, 255, 213);
+           justify-content: center;
+           align-items: center;
+           
+           
+        }
+        #hikingneed img {
+            width: 150px ;
+            height: 150px;
+            transition: 0.5s;
+           
+        }
+        .hikingproduct{
+            margin-right: 20px;
+            padding: 5px 10px;
+            transition: 1s;
+            transform: translateX(-100rem);
+            animation: slideIn 1s forwards;
+            animation-delay: 4s;
+            
+        }
+         #hikingneed .hikingproduct img:hover{
+            width: 170px;
+            height: 170px;
+        }
+        .hikingproduct a:hover{
+            
+            color:tomato;
+            width: 200px;
+            height: 200px;
+            
+        }
+        .hpprice{
+            color: rgb(4, 80, 4);
+        }
+        
+        .hkprice{
+            display: inline-block;
+            margin-top:5px ;
+            padding: 5px 10px;
+            background-color: tomato;
+            color:white;
+        }
+        .seemore{
+            padding: 10px 20px;
+            color: white;
+            background-color: seagreen;
+            transition: 0.5s;
+        }
+        .seemore:hover{
+            background-color: white;
+            color: seagreen;
+        }
+     
+       
+
+        /* -----------camping start here ------------------  */
+        #camping{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(4, 80, 4);
+            background: url(assets/camping/campingbg.png);
+            background-size:cover ;
+        }
+        .campingheader{
+            top: 5%;
+            color: white;
+            text-align: center;
+            position: relative;
+            font-family: d;
+                        
+        }
+        .campingheaderhr{
+            visibility:visible;
+            margin: 0 auto;
+            position: relative;
+            top: 5%;
+            width: 15%;
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgb(4, 80, 4), rgba(255, 255, 255, 0.75),  rgb(4, 80, 4));
+        }
+        .ccard{
+            animation-delay: 5s;
+        }
+        .campingtext{
+            color: white;
+            text-align: center;
+            position: relative;
+            top: 6%;
+            
+        }
+        .ccarditem{
+            box-shadow: none;
+            background-color:#d2fca2;
+           
+        }
+        .ccardtext span , p{
+            color:#43906D;
+            padding: 0px 10px;
+        }
+        .ccardfirstimg .campstar ,
+        .ccardsecondimg .campstar,
+        .ccardthirdimg .campstar,
+        .ccardfourthimg .campstar{
+            color: #43906D;
+            border-radius: 20px;
+            position: relative;
+            top: 10px ;
+            left: 8px;
+        }
+        .ccardprice .cardfrom{
+            color: #0F6153;
+        }
+        .ccardtext span{
+            color:#0F6153 ;
+        }
+        .ccardfirstimg{
+            background: url(assets/camping/ctwo.jpg);
+            background-size: cover;
+        }
+        .ccardsecondimg{
+            background: url(assets/camping/cthree.jpg);
+            background-size: cover;
+        }
+        .ccardthirdimg{
+            background: url(assets/camping/cfour.jpg);
+            background-size: cover;
+        }
+        .ccardfourthimg{
+            background: url(assets/camping/cfive.jpg);
+            background-size:cover ;
+        }
+        .camp-hiking{
+            padding: 10px 20px;
+            transition: 0.5s;
+            color: white;
+            border: 1px solid white;
+           
+        }
+        .camp-hiking:hover{
+            color: rgb(4, 80, 4);
+            background-color: white;
+        }
+       
+        .campingneed{
+            text-align: center;
+            color: rgb(4, 80, 4);
+            font-family: d;
+           width: 100%;
+           height: 30vh;
+           background-color: rgb(213, 255, 213);
+           display: flex;
+           align-items: center;
+           justify-content: center;
+        }
+        .campingproduct{
+            transition: 1s;
+            transform: translateX(-100rem);
+            animation: slideIn 1s forwards;
+            animation-delay: 6s;
+        }
+        #advanturing{
+            width: 100%;
+            height: 100vh;
+            background: url(assets/advanture/abg.png);
+            background-size: cover;
+        }
+        .advantureproduct{
+            transition: 1s;
+            transform: translateX(-100rem);
+            animation: slideIn 1s forwards;
+            animation-delay: 7.5s;
+        }
+        
+        .camp-advanture{
+            position: relative;
+            top: -5%;
+        }
+
+        .advantureheader{
+            color:#1d1c3b;
+        }
+        .advantureheaderhr{
+            color: #1d1c3b;
+
+        }
+        .advanturetext{
+            color: #5e4a89;
+            
+        }
+        .adv-camp{
+            color: #1d1c3b;
+            border: 1px solid #1d1c3b;
+            padding: 10px 20px;
+            font-family:q ;
+            transition: 0.5s;
+
+        }
+        .adv-camp:hover{
+            background-color: #1d1c3b;
+            color: white;
+        }
+        .acarditems{
+            background-color: #fffdf4;
+            animation: slideIn 1s forwards;
+            transform: translateX(100rem);
+            animation-delay: 7s;
+            
+        }
+        .acardfirstimg{
+            background: url(assets/advanture/two.jpg);
+            background-size: cover;
+        }
+        .acardsecondimg{
+            background: url(assets/advanture/three.jpg);
+            background-size: cover;
+        }
+        .acardthirdimg{
+            background: url(assets/advanture/four.jpg);
+            background-size: cover;
+        }
+        .acardfourthimg{
+            background: url(assets/advanture/five.jpg);
+            background-size: cover;
+        }
+        .acardfirstimg .acardstar,
+        .acardsecondimg .acardstar,
+        .acardthirdimg .acardstar,
+        .acardfourthimg .acardstar{
+
+                border-radius:20px;
+                position: relative;
+                top: 10px ;
+                left: 8px;
+                color: #1d1c3b;
+                
+        }
+       
+        .acardtext span , p{
+            color: #1d1c3b;
+        }
+        .acrdprice {
+            text-align: right;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 5px;
+            margin-right: 20px;
+        }
+        .acardprice .cardfrom {
+            color: #1d1c3b;
+
+        }
+        .acardprice a{
+            color: #1d1c3b;
+            border-color: #1d1c3b;
+            
+        }
+        .acardprice a:hover{
+            background-color: #1d1c3b;
+            color: white;
+        }
+        .adv-ro{
+            position: relative;
+            top: -5%;
+        }
+
+        /* romantic start here  */
+
+        #romantic{
+            width: 100%;
+            height: 100vh;
+            background: url(assets/romantic/bg.png);
+            background-size:cover ;
+        }
+        .romanticheader{
+                color: #ff3448;
+        }
+        .romanticheaderhr{
+            color: #ff3448;
+        }
+        .rtext{
+            color: #ff3448;
+        }
+        .rcarditems{
+            animation: slideIn 1s forwards;
+            transform: translateX(100rem);
+            animation-delay: 8s;
+        }
+        .rcarditems a{
+                color:#574240;
+                border-color: #574240;
+        }
+        .rcardtext a:hover{
+            
+            color: white;
+        }
+        .rcardfirstimg .rcardstar,
+        .rcardsecondimg .rcardstar,
+        .rcardthirdimg .rcardstar,
+        .rcardfourthimg .rcardstar
+       {        
+        color:#ff3448 ;
+        }
+        .rcardtext span,p{
+            color: #574240;
+        }
+    
+
+        .rcardfirstimg{
+            background: url(assets/romantic/one.jpg);
+            background-size: cover;
+        }
+        .rcardsecondimg{
+            background: url(assets/romantic/three.jpg);
+            background-size: cover;
+        }
+        .rcardthirdimg{
+            background:url(assets/romantic/four.jpg);
+            background-size: cover;
+
+        }
+        .rcardfourthimg{
+            background: url(assets/romantic/five.jpg);
+            background-size: cover;
+        }
+       .romanticproduct{
+        animation: slideIn 1s forwards;
+        transform: translateX(-100rem);
+        animation-delay: 8s;
+       }
+        .rcardprice .rcardfrom{
+            color: #574240;
+        }
+        .ro-adv{
+            color: #ff3448;
+            border-color: #ff3448;
+        }
+        .ro-adv:hover{
+            background-color: #ff3448;
+            color: white;
+        }
+        .ro-review{
+            color: #ff3448;
+            border-color: #ff3448;
+            position: relative;
+            top: -5%;
+        }
+        .ro-review:hover{
+            color: white;
+            background-color: #ff3448;
+        }
+        .rcardprice a:hover{
+                background-color: #574240;
+                
+        }
+
+        /* review start here  */
+
+        #review{
+            width: 100%;
+            height: 70vh;
+            background-color: rgb(253, 253, 253);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .reviewcard{
+            width: 30%;
+            height: 30vh;
+           padding: 10px 20px;
+           display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.5s;
+        }
+        .reviewcard:hover{
+            width: 35%;
+            height: 35vh;
+        }
+        .reviewrname{
+            display: inline-block;
+            position: relative;
+            left:70px;
+            margin-top: 1px;
+            font-family: d;
+        }
+        .reviewimg img{
+                margin-right: 15px;
+                border-radius: 100px;
+                width: 200px;
+                height: 200px;
+                text-align: center;
+                
+        }
+        .reviewtext i{
+            color: rgb(248, 224, 11);
+        }
+        .rtype{
+            font-family: d;
+        }
+        .reviewtext p{
+            margin: 0px;
+            padding: 0px;
+            font-size: 12px;
+            font-family: q;
+        }
+        .reviewheader{
+            position: relative;
+            top: 30px;
+            text-align: center;
+            font-family: d;
+        }
+        .rheaderhr{
+            visibility:visible;
+            margin: 0 auto;
+            position: relative;
+            top: 5%;
+            width: 15%;
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right,rgb(233, 211, 19), rgb(255, 241, 119), rgb(233, 211, 19));
+        }
+        .rheader{
+            color:  rgb(233, 211, 19);
+        }
+        .r-mainmenu{
+            padding: 10px 20px;
+            color: rgb(248, 224, 11);
+            border: 1px solid rgb(248, 224, 11) ;
+            position: relative;
+            left: 700px;
+            top: -50px;
+           
+            
+        }
+        .r-mainmenu:hover{
+            background-color: rgb(248, 224, 11);
+            color: white;
+            
+        }
+
+        /* footer start here  */
+
+        footer{
+            width: 100%;
+            height: 20vh;
+            background-color:rgb(213, 255, 213);
+            font-family: q;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        footer span{
+            margin-left: 70px;
+        }
+        .tripimg{
+            margin-right: 70px;
+        }
+        .tripadv{
+            width: 150px;
+            height: 150px;
+            margin-right: 40px;
+        }
+        .triptc{
+            width: 60px;
+            height: 60px;
+            margin-right: 40px;
+        }
+       
+       
+
+        
+
+        
+        
+       
